@@ -1,8 +1,185 @@
-<meta property="og:title" content="أخبار طنجة">
-<meta property="og:description" content="ساكنة إقامة بطنجة يشتكون من إزعاج محل بالليباردو بالنجمة">
-<meta property="og:image" content="https://saoudrap.github.io/akhbar-tanja/image%282%29.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:type" content="image/png">
-<meta property="og:url" content="https://saoudrap.github.io/akhbar-tanja/">
-<meta property="og:type" content="article">
+from pathlib import Path
+
+html = r'''<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>أخبار طنجة</title>
+  <meta name="description" content="ساكنة إقامة بطنجة يشتكون من إزعاج محل للبيلياردو بالنجمة">
+
+  <!-- WhatsApp / Facebook preview -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="أخبار طنجة">
+  <meta property="og:title" content="ساكنة إقامة بطنجة يشتكون من إزعاج محل للبيلياردو بالنجمة">
+  <meta property="og:description" content="اشتكى مواطنون يقطنون بالقرب من أحد المقاهي بمنطقة النجمة بمدينة طنجة من الإزعاج خلال ساعات متأخرة من الليل.">
+  <meta property="og:url" content="https://saoudrap.github.io/akhbar-tanja/">
+  <meta property="og:image" content="https://saoudrap.github.io/akhbar-tanja/image%282%29.png">
+  <meta property="og:image:secure_url" content="https://saoudrap.github.io/akhbar-tanja/image%282%29.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ساكنة إقامة بطنجة يشتكون من إزعاج محل للبيلياردو بالنجمة">
+  <meta name="twitter:description" content="اشتكى مواطنون يقطنون بالقرب من أحد المقاهي بمنطقة النجمة بمدينة طنجة من الإزعاج خلال ساعات متأخرة من الليل.">
+  <meta name="twitter:image" content="https://saoudrap.github.io/akhbar-tanja/image%282%29.png">
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f4f6f8;
+      color: #171717;
+      font-family: Arial, "Tahoma", sans-serif;
+      line-height: 1.9;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 18px 16px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    }
+    header h1 { margin: 0; font-size: 28px; }
+    .container {
+      max-width: 850px;
+      margin: 22px auto;
+      padding: 0 14px;
+    }
+    article {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 2px 14px rgba(0,0,0,.08);
+    }
+    .article-head { padding: 22px 22px 10px; }
+    .category {
+      color: #2563eb;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    h2 {
+      margin: 0;
+      font-size: 29px;
+      line-height: 1.55;
+    }
+    .date {
+      color: #777;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .hero {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 620px;
+      object-fit: cover;
+    }
+    .content {
+      padding: 22px;
+      font-size: 19px;
+    }
+    .content p { margin: 0 0 20px; }
+    .share {
+      margin: 0 22px 25px;
+      padding: 13px 18px;
+      border: 0;
+      border-radius: 10px;
+      background: #25D366;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      color: #777;
+      padding: 25px 10px;
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      h2 { font-size: 23px; }
+      .content { font-size: 17px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>أخبار طنجة</h1>
+  </header>
+
+  <main class="container">
+    <article>
+      <div class="article-head">
+        <div class="category">أخبار طنجة</div>
+        <h2>ساكنة إقامة بطنجة يشتكون من إزعاج محل للبيلياردو بالنجمة</h2>
+        <div class="date">28 سبتمبر 2026</div>
+      </div>
+
+      <img
+        class="hero"
+        src="image(2).png"
+        alt="ساكنة إقامة بطنجة يشتكون من إزعاج محل للبيلياردو بالنجمة"
+        loading="eager"
+        decoding="async"
+      >
+
+      <div class="content">
+        <p>
+          اشتكى مواطنون يقطنون بالقرب من أحد المقاهي بمنطقة النجمة بمدينة طنجة
+          من الإزعاج خلال ساعات متأخرة من الليل.
+        </p>
+
+        <p>
+          وأوضح المشتكون أن الأصوات المرتفعة الصادرة عن المحل تصل إلى منازلهم،
+          مما يتسبب في إزعاج للسكان ويؤثر على راحتهم والنوم، خصوصاً في أوقات
+          متأخرة من الليل.
+        </p>
+
+        <p>
+          وطالب السكان السلطات المحلية والأمنية بالتدخل من أجل الوقوف على
+          وضعية المحل، واتخاذ الإجراءات اللازمة لضمان الهدوء واحترام راحة
+          السكان.
+        </p>
+
+        <p>
+          ويأمل السكان أن تتم معالجة الموضوع بما يضمن حقوق الجميع واحترام
+          القوانين المنظمة للأنشطة التجارية والهدوء العام.
+        </p>
+      </div>
+
+      <button class="share" onclick="shareArticle()">مشاركة المقال</button>
+    </article>
+  </main>
+
+  <footer>© 2026 أخبار طنجة</footer>
+
+  <script>
+    async function shareArticle() {
+      const url = "https://saoudrap.github.io/akhbar-tanja/";
+      const title = "ساكنة إقامة بطنجة يشتكون من إزعاج محل للبيلياردو بالنجمة";
+
+      if (navigator.share) {
+        try {
+          await navigator.share({ title: title, text: title, url: url });
+        } catch (e) {}
+      } else {
+        try {
+          await navigator.clipboard.writeText(url);
+          alert("تم نسخ رابط المقال");
+        } catch (e) {
+          alert(url);
+        }
+      }
+    }
+  </script>
+</body>
+</html>
+'''
+
+path = Path("/mnt/data/index.html")
+path.write_text(html, encoding="utf-8")
+print(f"تم إنشاء الملف: {path}")
